@@ -1,259 +1,67 @@
 class Script(object):
-    START_TXT = """<b>
-╔══╦══╦══╦══╦══╦══╦══╗
-╚══╩══╩══╩══╩══╩══╩══╝
-
-   █░█░█ █░█░█ █▀▄▀█
-   ▀▄▀▄▀ ▀▄▀▄▀ █░▀░█
-
-╔══╦══╦══╦══╦══╦══╦══╗
-╚══╩══╩══╩══╩══╩══╩══╝
-</b>
+    START_TXT = """
+      
 <b>ഹായ് {}!!</b>
 
-➥<b>ഞാൻ @world_wide_movies ഗ്രൂപ്പിന്റെ  പാവം ഒരു ഫിൽറ്റർ ബോട്ട്.</b>
-
-➥<b>  ഗ്രൂപ്പിൽ അയക്കുന്ന റിക്വസ്റ്റ്കൾക്ക് റിപ്ലൈ വരുന്ന ബട്ടൺ ക്ലിക്ക് ചെയ്ത് എന്റെ ചാറ്റ് ബോക്സിൽ വന്നാൽ ഞാൻ  നിനക്കു മൂവി തരാം </b>
+<b>വെൽക്കം ടു കുല്സിതം</b>
 
 """
+HELP_TXT = """
 
-    HELP_TXT = """
-<b>
-╔══╦══╦══╦══╦══╦══╦══╗
-╚══╩══╩══╩══╩══╩══╩══╝
-
-   █░█░█ █░█░█ █▀▄▀█
-   ▀▄▀▄▀ ▀▄▀▄▀ █░▀░█
-
-╔══╦══╦══╦══╦══╦══╦══╗
-╚══╩══╩══╩══╩══╩══╩══╝
-
-</b>
     
-Hey {}
 
-<b>Here Is The Help For My Commands.</b>
-<b>~@world_wide_movies <b>
+
+<b>ലിങ്ക് എനിക്ക് അയച്ചു താ ഞാൻ ഡൌൺലോഡ് ചെയ്യാം</b>
 
 """
 
     ABOUT_TXT = """
-<b>➥ Name</b> : <code> Auto Filter Bot</code>
-<b>➥ Creator</b> : <b><i><a href="https://github.com/DevAXD">DevAXD</a></i></b>
-<b>➥ Language</b> : <code>Python3</code>
-<b>➥ Library</b> : <i><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></i>
-<b>➥ Source Code</b> : <i><a href="https://github.com/DevAXD/fiLTER">Click Me</a></i>
+nothing
 """
 
     SOURCE_TXT = """
  
-<b>PROVIDER</b>
-- <a href='https://t.me/WORLD_WIDE_MOVIES'>WORLD WIDE MOVIES</a>"""
+<b>നീലതാമര</b>
+"""
 
-    MANUALFILTER_TXT = """Help: <b>Filters</b>
+    MANUALFILTER_TXT = """nothing
 
--<i> Filter is the feature were users can set automated replies for a particular keyword and Dingdi will respond whenever a keyword is found the message</i>
 
-<b>NOTE:</b>
-1. IMDb should have admin privillage.
-2. Only admins can add filters in a chat.
-3. Alert buttons have a limit of 64 characters.
-
-<b>Commands and Usage:</b>
-• /filter - add a filter in chat.
-• /filters - list all the filters of a chat.
-• /del - delete a specific filter in chat.
-• /delall - delete the whole filters in a chat (chat owner only).
-
-<b>~@world_wide_movies <b>
 
 """
 
-    BUTTON_TXT = """Help: <b>Buttons</b>
+    BUTTON_TXT = """nothing"""
 
-- Bot support both url and alert inline buttons.
-
-<b>NOTE:</b>
-1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. IMDb supports buttons with any telegram media type.
-3. Buttons should be properly parsed as markdown format.
-
-<b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/world_wide_movies)</code>
-
-<b>Alert buttons:</b>
-<code>[Button Text](buttonalert:This is an alert message)</code>"""
-
-    FILLINGS_TXT = """Help: <b>Fillings</b>
-
-You can also customise the contents of your message with contextual data. For example, you could mention a user by name in the filter message, or mention them in a filter!
-
-<b>Supported fillings:</b>
-- <code>{first}</code>: The user's first name.
-- <code>{last}</code>: The user's last name.
-- <code{username}</code>: The user's username.
-- <code>{mention}</code>: Mentions the user with their firstname.
-- <code>{id}</code>: The user's ID.
-- <code>{dcid}</code>: The user's DC ID.
-- <code>{chatname}</code>: The chat's name.
-- <code>{query}</code>: Any Replied Message.
-
-<b>Example:</b>
-<b>- Save a filter using the mention.</b>
--> <code>/filter test Hello {mention} This Is your Username : {username} And This Is your ID : {id}.</code>
+    FILLINGS_TXT = """nothing
 """
 
-    AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
+    AUTOFILTER_TXT = """nothing."""
 
-<b>NOTE:</b>
-1. Make me the admin of your channel if it's private.
-2. Make sure that your channel does not contains camrips, porn and fake files.
-3. Forward the last message to me with quotes.
- I'll add all the files in that channel to my db."""
+    CONNECTION_TXT = """nothing"""
 
-    CONNECTION_TXT = """Help: <b>Connections</b>
+    AUTO_MANUAL_TXT = """nothing"""
 
-- Used to connect bot to PM for managing filters 
-- It helps to avoid spamming in groups.
+    PASTE_TXT = """nothing
 
-<b>NOTE:</b>
-1. Only admins can add a connection.
-2. Send <code>/connect</code> for connecting me to ur PM
+"""
 
-<b>Commands and Usage:</b>
-• /connect  - connect a particular chat to your PM.
-• /disconnect  - disconnect from a chat.
-• /connections - list all your connections."""
+    TGRAPH_TXT = """nothing"""
 
-    AUTO_MANUAL_TXT = """Help: <b>Filters</b>
+    INFO_TXT = """ nothing."""
 
-<b>Select a filters type Below:</b>"""
+    TORRENT_TXT = """nothing"""
 
-    PASTE_TXT = """Help: <b>Paste</b>
+    GTRANS_TXT = """nothing"""
 
-Paste some texts or documents on a website!
+    SEARCH_TXT = """nothing."""
 
-<b>Commands and Usage:</b>
-• /paste [text] - paste the given text on Pasty
-• /paste [reply] - paste the replied text on Pasty
+    PURGE_TXT = """nothing"""
 
-<b>NOTE:</b>
-• IMDb should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
+    RESTRIC_TXT = """nothing"""
 
-    TGRAPH_TXT = """Help: <b>TGraph & Paste</b>
+    PIN_MESSAGE_TXT = """nothing"""
 
-Do as you wish with telegra.ph module!
-
-<b>Commands and Usage:</b>
-• /tgmedia or /tgraph - upload supported media (within 5MB) to telegraph.
-
-<b>NOTE:</b>
-• IMDb should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
-
-    INFO_TXT = """Help: <b>Information</b>
-
-Get information about something!
-
-<b>Commands and Usage:</b>
-• /id - get id of a specified user.
-• /info  - get information about a user.
-• /json - get the json details of a message.
-
-<b>NOTE:</b>
-• IMDb should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
-
-    TORRENT_TXT = """Help: <b>Torrent Search</b>
-
-<b>Commands and Usage:</b>
-• /torrent or /tor <movie name>: Get Your Torrent Link From Various Resource.
-
-<b>NOTE:</b>
-• IMDb should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
-
-    GTRANS_TXT = """Help: <b>Google Translator</b>
-
-Translate texts to a specific language!
-
-<b>Commands and Usage:</b>
-• /tr [language code][reply] - translate replied message to specific language.
-
-<b>NOTE:</b>
-• IMDb should have admin privillage.
-• These commands works on both pm and group.
-• IMDb can translate texts to 200+ languages."""
-
-    SEARCH_TXT = """Help: <b>IMDb</b>
-
-Search many things without leaving telegram!
-
-<b>Commands and Usage:</b>
-• /imdb  - get the film information from IMDb source.
-• /search  - get the film information from various sources.
-
-<b>NOTE:</b>
-• IMDb should have admin privillage.
-• More search tools can be found on inline.
-• Those commands works on both pm and group."""
-
-    PURGE_TXT = """Help: <b>Purge</b>
-
-Need to delete lots of messages? That's what purges are for!
-
-<b>Commands and Usage:</b>
-• /purge - delete all messages from the replied to message, to the current message.
-
-<b>NOTE:</b>
-• IMDb should have admin privillage.
-• These commands works on group.
-• These commands can be used by Only admin."""
-
-    RESTRIC_TXT = """Help: <b>Restrictions</b>
-
-Some people need to be publicly banned; spammers, annoyances, or just trolls.
-
-This module allows you to do that easily, by exposing some common actions, so everyone will see!
-
-<b>Commands and Usage:</b>
-• /ban - ban a user.
-• /tban - temporarily ban a user. Example time values: 4m = 4 minutes, 3h = 3 hours, 6d = 6 days, 5w = 5 weeks.
-• /mute - mute a user.
-• /tmute - temporarily mute a user. Example time values: 4m = 4 minutes, 3h = 3 hours, 6d = 6 days, 5w = 5 weeks.
-• /unban or /unmute - unmute a user & unban a user.
-
-<b>Examples:</b>
-- Mute a user for two hours.
--> <code>/tmute @username 2h</code>
-
-<b>NOTE:</b>
-• IMDb should have admin privillage.
-• These commands works on group.
-• These commands can be used by Only admin."""
-
-    PIN_MESSAGE_TXT = """Help: <b>Pin Message</b>
-
-All the pin related commands can be found here; keep your chat up to date on the latest news with a simple pinned message!
-
-<b>Commands and Usage:</b>
-• /pin: Pin the message you replied to. Add 'loud' or 'notify' to send a notification to group members.
-• /unpin: Unpin the current pinned message. If used as a reply, unpins the replied to message.
-
-<b>NOTE:</b>
-• IMDb should have admin privillage.
-• These commands works only group.
-• These commands can be used by Only admin."""
-
-    ADMIN_TXT = """Help: <b>Admin Mods</b>
-
-<b>NOTE:</b>
-This module only works for my admins
+    ADMIN_TXT = """
 
 <b>Commands and Usage:</b>
 • /logs - to get the rescent errors.
@@ -290,10 +98,7 @@ Some dank memes for fun or whatever!
 • /luck or /cownd - Spin the Lucky
 • /runs strings
 
-<b>NOTE:</b>
-• IMDb should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
+"""
 
     URL_SHORTNER_TXT = """Help: <b>URL Shortner</b>
 
@@ -309,61 +114,11 @@ Some URLs is Shortner
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
-    TTS_TXT = """Help: <b>Text to Speech</b>
+    TTS_TXT = """nothing."""
 
-A module to convert text to voice with language support.
+    MUSIC_TXT = """nothing"""
 
-<b>Commands and Usage:</b>
-• /tts - Reply to any text message with language code to convert as audio.
-
-<b>NOTE:</b>
-• IMDb should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
-
-    MUSIC_TXT = """Help: <b>Music</b>
-
-Music download modules, for those who love music.
-
-<b>Commands and Usage:</b>
-• /song or /mp3 (songname) - download song from yt servers.
-• /video or /mp4 (songname) - download video from yt servers.
-
-<b>YouTube Thumbnail Download</b>
-• /ytthumb (youtube link)
-
-<b>NOTE:</b>
-• IMDb should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
-
-    PASSWORD_GEN_TXT = """Help: <b>Password Generator</b>
-
-There Is Nothing To Know More. Send Me The Limit Of Your Password.
-- I Will Give The Password Of That Limit.
-
-<b>Commands and Usage:</b>
-• /genpassword or /genpw <code>20</code>
-
-<b>NOTE:</b>
-• Only Digits Are Allowed
-• Maximum Allowed Digits Till 84 
-(I Can't Generate Passwords Above The Length 84)
-• IMDb should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
-
-    SHARE_TXT = """Help: <b>Sharing Text Maker</b>
-
-a bot to create a link to share text in the telegram.
-
-<b>Commands and Usage:</b>
-• /share (text or reply to message)
-
-<b>NOTE:</b>
-• IMDb should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
+    PASSWORD_GEN_TXT = """nothing"""
 
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
