@@ -23,15 +23,13 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [[
             InlineKeyboardButton('Help ⚙️ ', callback_data='help'),
-            InlineKeyboardButton('About ❔', callback_data='about')
-            ],[
-                InlineKeyboardButton('movie request here 📲', url=f'https://t.me/world_wide_movies')
-            ],
-            [
+            InlineKeyboardButton('Neelathamara ❄️', url=f'https://t.me/neelathaamara_official')
+            ]
+            ,[
             InlineKeyboardButton('Close ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await client.send_sticker(chat_id=message.chat.id,sticker='CAACAgIAAxkBAAPrYioXVaTWzaVY_ZB1TttMYK0rkcsAAq0WAAIdY1BJPOls03MkWaweBA', reply_markup=reply_markup, reply_to_message_id=message.message_id)
+        await client.send_sticker(chat_id=message.chat.id,sticker='CAACAgUAAxkBAAIBC2Irb8qqdyFBm_kGuMZ9oCoKw8ccAAI3BAACaVeYV5g7GdNUTXvmHgQ', reply_markup=reply_markup, reply_to_message_id=message.message_id)
         await asyncio.sleep(60)
         if not await db.get_chat(message.chat.id):
             total=await client.get_chat_members_count(message.chat.id)
@@ -44,11 +42,9 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
             InlineKeyboardButton('Help ⚙️ ', callback_data='help'),
-            InlineKeyboardButton('About ❔', callback_data='about')
-            ],[
-                InlineKeyboardButton('movie request here 📲', url=f'https://t.me/world_wide_movies')
-            ],
-            [
+            InlineKeyboardButton('Neelathamara ❄️', url=f'https://t.me/neelathaamara_official')
+            ]
+            ,[
             InlineKeyboardButton('Close ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -69,7 +65,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "Join Updates Channel", url=invite_link.invite_link
                 )
             ]
         ]
@@ -88,11 +84,9 @@ async def start(client, message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons =[[
             InlineKeyboardButton('Help ⚙️ ', callback_data='help'),
-            InlineKeyboardButton('About ❔', callback_data='about')
-            ],[
-                InlineKeyboardButton('movie request here 📲', url=f'https://t.me/world_wide_movies')
-            ],
-            [
+            InlineKeyboardButton('Neelathamara ❄️', url=f'https://t.me/neelathaamara_official')
+            ]
+            ,[
             InlineKeyboardButton('Close ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -240,8 +234,8 @@ async def start(client, message):
             f_caption=f_caption
     if f_caption is None:
         f_caption = f"{files.file_name}"
-    buttons = [[
-                InlineKeyboardButton('movie request here 📲', url=f'https://t.me/world_wide_movies')
+    buttons = [ [
+                InlineKeyboardButton('Neelathamara ❄️', url=f'https://t.me/neelathaamara_official')
             ]]
     await client.send_cached_media(
         chat_id=message.from_user.id,
