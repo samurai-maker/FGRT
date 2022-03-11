@@ -173,10 +173,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     title = chat.title
                 except:
                     await query.message.edit_text("Make sure I'm present in your group!!", quote=True)
-                    return await query.answer('Piracy Is Crime')
+                    return await query.answer('HAA....')
             else:
                 await query.message.edit_text(
-                    "I'm not connected to any groups!\nCheck /connections or connect to any groups",
+                    "EH ENTHA...?",
                     quote=True
                 )
                 return await query.answer('Piracy Is Crime')
@@ -311,7 +311,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         groupids = await all_connections(str(userid))
         if groupids is None:
             await query.message.edit_text(
-                "There are no active connections!! Connect to some groups first.",
+                "ENTHONNADE.",
             )
             return await query.answer('Piracy Is Crime')
         buttons = []
@@ -375,7 +375,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{files.file_name}"
         buttons =[ [
-                InlineKeyboardButton('movie request here 📲', url=f'https://t.me/world_wide_movies')
+                InlineKeyboardButton('Neelathamara ❄️', url=f'https://t.me/neelathaamara_official')
             ]]
             
 
@@ -424,7 +424,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         buttons =[ [
-                InlineKeyboardButton('movie request here 📲', url=f'https://t.me/world_wide_movies')
+                InlineKeyboardButton('Neelathamara ❄️', url=f'https://t.me/neelathaamara_official')
             ]]
             
         await query.answer()
@@ -440,9 +440,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":
         buttons = [[
             InlineKeyboardButton('Help ⚙️ ', callback_data='help'),
-            InlineKeyboardButton('About ❔', callback_data='about')
-            ],[
-                InlineKeyboardButton('movie request here 📲', url=f'https://t.me/world_wide_movies')
+            InlineKeyboardButton('Neelathamara ❄️', url=f'https://t.me/neelathaamara_official')
             ]
             ,[
             InlineKeyboardButton('Close ✗', callback_data='close_data')
@@ -491,51 +489,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "about":
-        buttons = [[
-            InlineKeyboardButton('♻️ Status', url='https://t.me/slogan_98/46'),
-            InlineKeyboardButton('📁 Source', callback_data='source')
-            ],[
-            InlineKeyboardButton('📋 How to Use? ', callback_data='help')
-            ], [
-            InlineKeyboardButton('Donate 💰', url='https://www.buymeacoffee.com/Devaxd')
-            ],
-            
-            
-            [
-            InlineKeyboardButton('« Back', callback_data='start'),
-            InlineKeyboardButton('Close ✗', callback_data='close_data')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.ABOUT_TXT.format(temp.B_NAME),
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "torrent":
-        buttons = [[
-            InlineKeyboardButton('« Back', callback_data='help'),
-            InlineKeyboardButton('Close ✗', callback_data='close_data')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.TORRENT_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "source":
-        buttons = [[
-            InlineKeyboardButton('« Back', callback_data='about')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.SOURCE_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
+ 
     elif query.data == "manualfilter":
         buttons = [[
             InlineKeyboardButton('Buttons', callback_data='button'),
@@ -858,7 +812,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('Piracy Is Crime')
+    await query.answer('ha...')
 
 
 async def auto_filter(client, msg, spoll=False):
@@ -959,7 +913,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🎬 Title:</b> <a href={url}>{title}</a> [{year}] —<b>{kind}</b>\n\n<b>📆 Release:</b> <a href={url}/releaseinfo>{release_date}</a>\n<b>🌟 Rating:</b> <a href={url}/ratings>{rating} / 10</a>\n(based on <code>{votes}</code> user ratings.)\n\n<b>🎭 Genres:</b> #{genres}\n<b>📀 Runtime:</b> <code>{runtime} minutes</code>\n\n<b>☀️ Languages:</b> #{languages}\n<b>🌎 Country of Origin:</b> #{countries}\n\n<b>നിങ്ങൾ ഉദ്ദേശിച്ച അതെ മൂവി ആകണം എന്നില്ല പോസ്റ്ററിൽ ദൃശ്യമാവുന്നത്.താഴെയുള്ള ബട്ടണുകളിൽ നിന്ന് മൂവി നെയിം, ഇയർ, സൈസ് എന്നിവ നോക്കി തിരഞ്ഞെടുക്കുക.</b> "
+        cap = f"<b>🎬 Title:</b> <a href={url}>{title}</a> [{year}] —<b>{kind}</b>\n\n<b>📆 Release:</b> <a href={url}/releaseinfo>{release_date}</a>\n<b>🌟 Rating:</b> <a href={url}/ratings>{rating} / 10</a>\n(based on <code>{votes}</code> user ratings.)\n\n<b>🎭 Genres:</b> #{genres}\n<b>📀 Runtime:</b> <code>{runtime} minutes</code>\n\n<b>☀️ Languages:</b> #{languages}\n<b>🌎 Country of Origin:</b> #{countries}\n\n<b>~@neelathamara</b> "
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
@@ -975,12 +929,12 @@ async def auto_filter(client, msg, spoll=False):
             await message.delete()
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_photo(photo="https://telegra.ph/file/82b5bbbab6d5e5593b6b2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_photo(photo="https://telegra.ph/file/72f1b47abe8c0d1bda0f6.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(36000)
             await fek.delete()
             await msg.delete()
     else:
-        fuk = await message.reply_photo(photo="https://telegra.ph/file/8b42f6caf6ef5fd76766f.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_photo(photo="https://telegra.ph/file/ff691c5c054c930935645.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(36000)
         await fuk.delete()
         await msg.delete()
@@ -1030,12 +984,9 @@ async def advantage_spell_chok(msg):
         button = InlineKeyboardMarkup(
         [[
            InlineKeyboardButton("🌎 Google ", url=f"https://www.google.com/search?q={search}")
-        ],
-        [
-           InlineKeyboardButton("🎟 IMDb", url=f"https://www.imdb.com/find?q={search}"),
-           InlineKeyboardButton("📖 Wikipedia ", url=f"https://en.m.wikipedia.org/w/index.php?search={search}")
+   
         ]])
-        k = await msg.reply(f"Hey, Your word <b>{search}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>", reply_markup=button)
+        k = await msg.reply(f"Hey, Your word <b>{search}</b> is video Related to the Given Word Was Found 🥺\n\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>", reply_markup=button)
         await asyncio.sleep(60)
         await k.delete()
         return
