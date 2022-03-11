@@ -26,7 +26,7 @@ async def save_group(bot, message):
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
-                text='<b>CHAT NOT ALLOWED 🐞\n\nMy admins has restricted me from working here ! If you want to know more about it contact slogan..</b>',
+                text='<b>CHAT NOT ALLOWED </b>',
                 reply_markup=reply_markup,
             )
 
@@ -38,18 +38,18 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 Updates ', url='https://t.me/slogan_98')
+           
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact slogan.</b>",
+            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️</b>",
             reply_markup=reply_markup)
     else:
         settings = await get_settings(message.chat.id)
         if settings["welcome"]:
             for u in message.new_chat_members:
                 buttons = [[
-                InlineKeyboardButton(' Share ', url="https://telegram.me/share/url?url=%20t.me/world_wide_movies")
+                InlineKeyboardButton(' Share ', url="https://telegram.me/share/url?url=%20t.me/neelathaamara_official")
             ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
@@ -77,7 +77,7 @@ async def leave_a_chat(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat,
-            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact slogan.</b>',
+            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go!</b>',
             reply_markup=reply_markup,
         )
 
